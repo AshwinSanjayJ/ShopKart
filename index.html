@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DipKart - Online Shopping Made Easy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <marquee scrollamount="15">PS5 ||  PS4  ||  XBOX ONE  || NITENDO SWITCH AT 50 %. DON'T MISS THIS OFFER. YOU WILL REGRET IT YOUR WHOLE. DID YOU GET IT. THA HELL BRO, ARE YOU STILL READING, WHAT...ARE YOU A "CHILD". C'MON NO TIME TO WASTE ANYMORE. BUY BUY BUY BUY</marquee>
+
+</head>
+
+<body>
+    <div class="site">
+        <div class="nav">
+            <div class="navimg">
+                <img src="logo.png" alt="" class="img">
+            </div>
+            <h1 style="color: azure;" class="title"><span class="dip">DIP</span> \--, <span class="kart">KART</span>
+            </h1>
+            <div class="cart">
+                <img src="shopping-cart.png" alt="img" class="cartimg">
+                <p id="count"></p>
+                <button id="purchase" onclick="checkout()">Check Out</button>
+            </div>
+        </div>
+        <div class="intro">
+            <h4>View The Products By <span class="click">CLICKING</span> Them.</h4>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="shop-items">
+                <input type="radio" name="slide" id="c1" >
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="icon">1</div>
+                        <div class="description">
+                            <h4>PS5</h4>
+                            <p>Sony PS5 Console - Call of Duty Modern Warfare III Bundle
+                            </p>
+                            <button class="add2cart" onclick="addcart()">Buy</button>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2" >
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon">2</div>
+                        <div class="description">
+                            <h4>PS4</h4>
+                            <p>PS4 1TB slim/Horizon Zero Dawn CE/GT Sport II/Ratchet &Clank/PS+3M
+
+                            </p>
+                            <button class="add2cart" onclick="addcart()">Buy</button>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3" >
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="icon">3</div>
+                        <div class="description">
+                            <h4>XBOX ONE</h4>
+                            <p>Xbox One Console - Halo: The Master Chief Collection Bundle
+                            </p>
+                            <button class="add2cart" onclick="addcart()">Buy</button>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c4" >
+                <label for="c4" class="card">
+                    <div class="row">
+                        <div class="icon">4</div>
+                        <div class="description">
+                            <h4>NITENDO SWITCH</h4>
+                            <p>Nintendo Switch OLED with Joy-Con - White and Black
+                            </p>
+                            <button class="add2cart" onclick="addcart()">Buy</button>
+                        </div>
+                    </div>
+                </label>
+                <!-- <div class="items">PS5</div> -->
+                <!-- <div class="items">PS4</div>
+            <div class="items">XBOX ONE</div>
+            <div class="items">NITENDO SWITCH</div> -->
+            </div>
+        </div>
+    </div>
+<script src>let itemcount=document.getElementById("count")
+    itemcount.innerHTML=0
+    function addcart(){
+        let currentCount = parseInt(itemcount.innerHTML);
+        itemcount.innerHTML = currentCount + 1;
+    }
+    function checkout(){
+        if(itemcount.innerHTML>0){
+            alert(itemcount.innerHTML+ " Consoles Purchased Succesfully")
+        }
+    }</script>
+</body>
+
+</html>
